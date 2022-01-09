@@ -20,6 +20,18 @@ img {
   display: block;
 }
 
+h2 {
+  font-size: 3em;
+  font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
+}
+
+h4 {
+  color: #ED5535;
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
 .btn {
   width: 170px !important;
   padding: 15px;
@@ -27,11 +39,45 @@ img {
   border-radius: 25px;
   text-transform: uppercase;
   font-weight: 600;
+  display: block;
 }
 
 .body {
   width: 85%;
   margin: 50px auto;
+}
+
+.course-type {
+  background-color: #66A322;
+  border: 2px solid #333333;
+  border-radius: 25px;
+  padding: 4px 12px;
+  color: #fff;
+}
+
+.course-stars {
+  background-color: #fff;
+  border: 2px solid #333333;
+  border-radius: 25px;
+  padding: 4px 12px;
+}
+
+.course-stars i {
+  margin-right: 3px;
+  color: #F5A521;
+}
+
+.course-price {
+  width: 50px;
+  height: 50px;
+  background-color: #ED5535;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
 }
 
 .header-container {
@@ -83,17 +129,11 @@ img {
 }
 
 .about .main-about .text h4 {
-  color: #ED5535;
-  text-transform: uppercase;
-  font-size: .9em;
   margin: 0 0 1em;
 }
 
 .about .main-about .text h2 {
   width: 60%;
-  font-size: 3em;
-  font-family: 'Roboto Slab', serif;
-  text-transform: capitalize;
   line-height: 1.2em;
   margin: 0 0 .5em;
 }
@@ -143,12 +183,141 @@ img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 50px;
-  margin: 50px 0;
+  margin: 100px 0;
 }
 
 .about .companies .company-logo {
   width: 100%;
   background-color: rgba(102, 102, 102, 0.4);
   border-radius: 20px;
+}
+
+.about .top-courses {
+  margin: 100px 0;
+}
+
+.about .top-courses .courses {
+  height: 50vh;
+  margin: 50px 0;
+  display: grid;
+  grid-gap: 20px 20px;
+  grid-template-columns: 65% 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "main one" "main two" "main three";
+}
+
+.about .top-courses .courses .course {
+  border: 3px solid #333333;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.about .top-courses .courses .main-course {
+  position: relative;
+  grid-template: 'main';
+}
+
+.about .top-courses .courses .main-course img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.about .top-courses .courses .main-course .course-type {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.about .top-courses .courses .main-course .course-stars {
+  position: absolute;
+  bottom: 160px;
+  left: 30px;
+}
+
+.about .top-courses .courses .main-course h3 {
+  font-size: 2.4em;
+  font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
+  color: #fff;
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+}
+
+.about .top-courses .courses .main-course .course-profesor {
+  width: 26.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+}
+
+.about .top-courses .courses .main-course .course-profesor img {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 3px;
+}
+
+.about .top-courses .courses .main-course .course-profesor p {
+  color: #fff;
+}
+
+.about .top-courses .courses .main-course .course-price {
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+}
+
+.about .top-courses .courses .course-one, .about .top-courses .courses .course-two, .about .top-courses .courses .course-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+}
+
+.about .top-courses .courses .course-one img, .about .top-courses .courses .course-two img, .about .top-courses .courses .course-three img {
+  width: 50%;
+  border-radius: 16px;
+}
+
+.about .top-courses .courses .course-one h3, .about .top-courses .courses .course-two h3, .about .top-courses .courses .course-three h3 {
+  width: 50%;
+}
+
+.about .top-courses .courses .course-one .course-type, .about .top-courses .courses .course-two .course-type, .about .top-courses .courses .course-three .course-type {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.about .top-courses .courses .course-one .course-stars, .about .top-courses .courses .course-two .course-stars, .about .top-courses .courses .course-three .course-stars {
+  position: absolute;
+  bottom: 160px;
+  left: 30px;
+}
+
+.about .top-courses .courses .course-one .course-price, .about .top-courses .courses .course-two .course-price, .about .top-courses .courses .course-three .course-price {
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+}
+
+.about .top-courses .courses .course-one {
+  grid-template: 'one';
+}
+
+.about .top-courses .courses .course-two {
+  grid-template: 'two';
+}
+
+.about .top-courses .courses .course-three {
+  grid-template: 'three';
 }
 /*# sourceMappingURL=style.css.map */

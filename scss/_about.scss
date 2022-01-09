@@ -7,16 +7,10 @@
             @include flex(center, start);
             flex-direction: column;
             h4{
-                color:$red;
-                text-transform: uppercase;
-                font-size: .9em;
                 margin: 0 0 1em ;
             }
             h2{
-                width: 60%;
-                font-size: 3em;
-                font-family: 'Roboto Slab', serif;
-                text-transform: capitalize;
+                width: 60%;       
                 line-height: 1.2em;
                 margin: 0 0 .5em ;
             }
@@ -59,11 +53,118 @@
         display:grid;
         grid-template-columns: repeat(5,1fr);
         grid-column-gap: 50px;
-        margin: 50px 0;
+        margin: 100px 0;
         .company-logo{
             width: 100%;
             background-color: rgba(#666,.4);
             border-radius: 20px;
         }
     }
-}
+    .top-courses{
+        margin: 100px 0;
+        .courses{
+            height: 50vh;
+            margin: 50px 0; 
+            display: grid; 
+            grid-gap: 20px 20px;
+            grid-template-columns: 65% 1fr; 
+            grid-template-rows: 1fr 1fr 1fr; 
+            grid-template-areas: 
+              "main one"
+              "main two"
+              "main three"; 
+            .course{
+                @include border($black);
+            }
+            .main-course{
+                position: relative;
+                grid-template: 'main';
+                img{
+                    width: 100%;
+                    height:100%;
+                    object-fit: cover;
+                    border-radius: 16px; 
+                }
+                .course-type{
+                    position: absolute;
+                    top: 40px;
+                    left:30px;
+                }
+                .course-stars{
+                    position: absolute;
+                    bottom: 160px;
+                    left:30px;
+                }
+                h3{
+                    font-size: 2.4em;
+                    font-family: 'Roboto Slab', serif;
+                    text-transform: capitalize;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 100px;
+                    left:30px;
+                }
+                .course-profesor{
+                    width: 26.5%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: absolute;
+                    bottom: 40px;
+                    left:30px;
+                    img{
+                        width: 40px;
+                        height:40px;
+                        background-color:#fff;
+                        border-radius: 50%;
+                        border:2px solid $black;
+                        padding: 3px;
+                    }
+                    p{
+                        color:#fff;
+                    }
+                }
+                .course-price{
+                    position: absolute;
+                    bottom: 40px;
+                    right:30px;
+                }
+            }
+            .course-one,.course-two,.course-three{
+                @include flex(space-between,start);
+                position: relative;
+                img{
+                    width: 50%;
+                    border-radius: 16px;
+                }
+                h3{
+                    width: 50%;
+                }
+                .course-type{
+                    position: absolute;
+                    top: 40px;
+                    left:30px;
+                }
+                .course-stars{
+                    position: absolute;
+                    bottom: 160px;
+                    left:30px;
+                }
+                .course-price{
+                    position: absolute;
+                    bottom: 40px;
+                    right:30px;
+                }
+            }
+            .course-one{
+                grid-template: 'one';
+            }
+            .course-two{
+                grid-template: 'two';
+            }
+            .course-three{
+                grid-template: 'three';
+            }
+        }
+    }
+} 
