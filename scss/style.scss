@@ -1,0 +1,9 @@
+$blue: #3B5FEF;
+$green: #66A322;
+$red:#ED5535;
+$black: #333333;
+
+@mixin border {
+    border: 2px solid $black;
+    border-radius: 20px;
+}
