@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    //font-family: 'Roboto Slab', serif;
+    color: $black;
+}
+
+body{
+    padding: 80px 0 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display:block;
+}
+
+.btn{
+    width: 170px !important;
+    padding: 15px;
+    text-align:center;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.body{
+    width: 85%;
+    margin: 50px auto;
+}

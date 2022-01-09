@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Roboto+Slab:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  color: #333333;
+}
+
+body {
+  padding: 80px 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.btn {
+  width: 170px !important;
+  padding: 15px;
+  text-align: center;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.body {
+  width: 85%;
+  margin: 50px auto;
+}
+
+.header-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+}
+
+.header-container .header {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container .header .logo h1 {
+  font-weight: bolder;
+  font-family: 'Roboto Slab', serif;
+}
+
+.header-container .header .main-nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container .header .btn-contact {
+  color: #3B5FEF;
+  border: 1px solid #3B5FEF;
+}
+
+.about .main-about {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about .main-about .text {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.about .main-about .text h4 {
+  color: #ED5535;
+  text-transform: uppercase;
+  font-size: .9em;
+  margin: 0 0 1em;
+}
+
+.about .main-about .text h2 {
+  width: 60%;
+  font-size: 3em;
+  font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
+  line-height: 1.2em;
+  margin: 0 0 .5em;
+}
+
+.about .main-about .text p {
+  width: 80%;
+  line-height: 2.4em;
+  margin: 0 0 1.2em;
+}
+
+.about .main-about .text .btn-courses {
+  background-color: #3B5FEF;
+  color: #fff;
+  border: 1px solid transparent;
+  grid-row: 6;
+}
+
+.about .main-about .images {
+  grid-column: 'images';
+  position: relative;
+}
+
+.about .main-about .images img {
+  border: 3px solid #333333;
+  border-radius: 20px;
+  padding: 5px;
+  width: 78%;
+  background-color: #fff;
+}
+
+.about .main-about .images .bg-image {
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+
+.about .main-about .images .main-image {
+  position: absolute;
+  top: 5%;
+  right: 0;
+}
+
+.about .companies {
+  width: 100%;
+  height: 10vh;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 50px;
+  margin: 50px 0;
+}
+
+.about .companies .company-logo {
+  width: 100%;
+  background-color: rgba(102, 102, 102, 0.4);
+  border-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */

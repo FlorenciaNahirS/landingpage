@@ -1,9 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Roboto+Slab:wght@800&display=swap'); 
+
 $blue: #3B5FEF;
 $green: #66A322;
 $red:#ED5535;
 $black: #333333;
 
-@mixin border {
-    border: 2px solid $black;
+@mixin border($color) {
+    border: 3px solid $color;
     border-radius: 20px;
+    padding: 5px
 }
+
+@mixin flex($content,$align) {
+    display:flex;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@import 'general';
+@import 'header';
+@import 'about';
+
+
+
+
+
