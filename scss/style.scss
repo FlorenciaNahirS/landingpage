@@ -5,6 +5,7 @@ $green: #66A322;
 $red:#ED5535;
 $yellow: #F5A521;
 $black: #333333;
+$grey: rgba(#333, .5);
 
 @mixin border($color) {
     border: 3px solid $color;
@@ -20,6 +21,8 @@ $black: #333333;
 
 @import 'general';
 @import 'header';
+@import 'courses';
+@import 'features';
 @import 'about';
 
 

@@ -3,23 +3,29 @@
         height: 90vh;
         display:grid;
         grid-template-columns: repeat(2,1fr);
+        column-gap:30px;
         .text{
             @include flex(center, start);
             flex-direction: column;
             h2{
-                width: 60%;       
+                width: 70%;       
                 line-height: 1.2em;
                 margin: 0 0 .5em ;
             }
-            p{
-                width: 80%;
-                line-height: 2.4em;
-                margin: 0 0 1.2em ;
+            h3{
+                width: 85%;       
+                line-height: 1.6em;
+                margin: 0 0 .5em ;
             }
-            .btn-courses{
-                background-color:$blue;
-                color:#fff;
-                border:1px solid transparent;
+            p{
+                width: 75%;
+                line-height: 2em;
+                margin: 10px 0 20px;
+                color: $grey;
+            }
+            .btn-about{
+                color:$blue;
+                border:2px solid $blue;
                 grid-row: 6;
             }
         }
@@ -33,222 +39,14 @@
             }
             .bg-image{
                 position: absolute;
-                top: 20%;
+                top: 5%;
                 left: 0;
             }
             .main-image{
                 position: absolute;  
-                top: 5%; 
+                top: 20%; 
                 right: 0;
             }
         }
     }
-    .companies{
-        width: 100%;
-        height: 10vh;
-        padding: 10px 0;
-        display:grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-column-gap: 50px;
-        margin: 100px 0;
-        .company-logo{
-            width: 100%;
-            background-color: rgba(#666,.4);
-            border-radius: 20px;
-        }
-    }
-    .top-courses{
-        margin: 100px 0;
-        .courses{
-            margin: 50px 0; 
-            display: grid; 
-            grid-gap: 30px 30px;
-            grid-template-columns: 60% 1fr; 
-            grid-template-rows: 1fr 1fr 1fr; 
-            .course{
-                @include border($black);
-            }
-            .main-course{
-                grid-column: 1;
-                grid-row: 1 / 4 ;
-                position: relative;
-                grid-area: 'main';
-                img{
-                    width: 100%;
-                    height:100%;
-                    object-fit: cover;
-                    border-radius: 16px; 
-                }
-                .course-type{
-                    position: absolute;
-                    top: 40px;
-                    left:30px;
-                }
-                .course-stars{
-                    position: absolute;
-                    bottom: 160px;
-                    left:30px;
-                }
-                h3{
-                    font-size: 2.4em;
-                    font-family: 'Roboto Slab', serif;
-                    text-transform: capitalize;
-                    color: #fff;
-                    position: absolute;
-                    bottom: 100px;
-                    left:30px;
-                }
-                .course-profesor{
-                    width: 26.5%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    position: absolute;
-                    bottom: 40px;
-                    left:30px;
-                    img{
-                        width: 40px;
-                        height:40px;
-                        background-color:#fff;
-                        border-radius: 50%;
-                        border:2px solid $black;
-                        padding: 3px;
-                    }
-                    p{
-                        color:#fff;
-                    }
-                }
-                .course-price{
-                    position: absolute;
-                    bottom: 40px;
-                    right:30px;
-                }
-            }
-            .course-one,.course-two,.course-three{
-                .course-price{
-                    width: 40px;
-                    height:40px;
-                    font-size: .9em;
-                }
-                @include flex(space-between,start);
-                position: relative;
-                img{
-                    width: 50%;
-                    border-radius: 16px;
-                }
-                .text{
-                    height: 100%;
-                    width: calc(50% - 20px);
-                    @include flex(space-around, start);
-                    flex-direction: column;
-                    p{
-                        color: rgba(#333, .5)
-                    }
-                }
-                .course-type{
-                    position: absolute;
-                    top: 12px;
-                    left:10px;
-                }
-                .course-stars{
-                    position: absolute;
-                    bottom: 12px;
-                    left:10px;
-                }
-                .course-price{
-                    position: absolute;
-                    bottom: 12px;
-                    right:10px;
-                }
-            }
-            .course-one{
-                grid-column: 2;
-                grid-row: 1 ;
-            }
-            .course-two{
-                grid-column: 2;
-                grid-row: 2 ;
-            }
-            .course-three{
-                grid-column: 2;
-                grid-row: 3 ;
-            }
-        }
-    }
-    .all-courses{
-        margin: 100px 0;
-        .courses{
-            margin: 50px 0; 
-            display: grid; 
-            grid-column-gap: 30px;
-            grid-template-columns: repeat(4,1fr);
-            .course{
-                @include border($black);
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: 50% 42px repeat(2, 1fr);
-                grid-column-gap: 0px;
-                grid-row-gap: 20px;
-                align-items: stretch;
-                position: relative;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit:cover;
-                    grid-area: 1 / 1 / 2 / 3;
-                    border-radius: 16px;
-                }
-                h3{
-                    grid-area: 2 / 1 / 3 / 3;
-                    text-transform: capitalize;
-                    margin-left: 10px;
-                    align-self: stretch;
-                }
-                .course-type{
-                    position: absolute;
-                    top: 20px;
-                    left:10px;
-                }
-                .course-profesor{
-                    display:flex;
-                    align-items: center;
-                    grid-area: 3 / 1 / 4 / 3; 
-                    margin-left: 10px;
-                    img{
-                        width: 35px;
-                        height:35px;
-                        background-color:#fff;
-                        border-radius: 50%;
-                        border:2px solid $black;
-                        padding: 3px;
-                        margin-right: 15px;
-                    }
-                }
-                
-                .course-stars{
-                    background:transparent;
-                    display:flex;
-                    align-items: center;
-                    grid-area: 4 / 1 / 5 / 2;
-                    margin-left: 10px;
-                    border:none;
-                    padding: 0;
-                    margin-bottom: 10px;
-                }
-                .course-price{
-                    width: 40px;
-                    height:40px;
-                    grid-area: 4 / 2 / 5 / 3; 
-                    justify-self: flex-end;
-                    margin-right: 10px;
-                    margin-bottom: 10px;
-                }
-            }
-        }
-        .btn-allCourses{
-            margin: 0 auto;
-            color: $blue;
-            border: 2px solid $blue;
-        }
-    }
-} 
+}
