@@ -121,7 +121,7 @@ ul, li {
 }
 
 .courses .main-courses {
-  height: 90vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -141,8 +141,9 @@ ul, li {
 
 .courses .main-courses .text p {
   width: 80%;
-  line-height: 2.4em;
-  margin: 0 0 1.2em;
+  line-height: 2em;
+  margin: 0 0 30px;
+  color: rgba(51, 51, 51, 0.5);
 }
 
 .courses .main-courses .text .btn-courses {
@@ -429,7 +430,7 @@ ul, li {
 }
 
 .features .main-features {
-  height: 90vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
@@ -493,7 +494,7 @@ ul, li {
 }
 
 .features .special-features {
-  margin: 100px 0;
+  margin: 100px 0 150px;
 }
 
 .features .special-features .features-box {
@@ -541,7 +542,7 @@ ul, li {
 }
 
 .about .main-about {
-  height: 90vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
@@ -602,5 +603,222 @@ ul, li {
   position: absolute;
   top: 20%;
   right: 0;
+}
+
+.about .about-numbers {
+  margin: 100px 0 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+
+.about .about-numbers .number h3 {
+  font-size: 3em;
+  margin: 0 0 20px;
+}
+
+.about .about-numbers .number p {
+  text-transform: capitalize;
+  font-size: 1.1em;
+}
+
+.about .about-start {
+  margin: 100px 0;
+}
+
+.about .about-start .start-steps {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+
+.about .about-start .start-steps .steps {
+  height: 380px;
+  border: 3px solid #333333;
+  border-radius: 20px;
+  padding: 5px;
+  position: relative;
+}
+
+.about .about-start .start-steps .steps h3, .about .about-start .start-steps .steps p {
+  width: 80%;
+  margin: 0 auto;
+  margin: 30px;
+}
+
+.about .about-start .start-steps .steps h3 {
+  font-size: 1.4em;
+}
+
+.about .about-start .start-steps .steps p {
+  color: rgba(51, 51, 51, 0.5);
+  line-height: 2em;
+}
+
+.about .about-start .start-steps .steps .number {
+  width: 70px;
+  height: 70px;
+  border: 3px solid #333333;
+  border-radius: 50%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.3em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.about .get-started {
+  margin: 100px 0;
+  border: 3px solid #333333;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.about .get-started .container {
+  background-color: #ED5535;
+  border-radius: 18px;
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+}
+
+.about .get-started .container .title {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.about .get-started .container .title h4, .about .get-started .container .title h2 {
+  color: #fff;
+}
+
+.about .get-started .container .text {
+  grid-area: 1 / 2 / 4 / 3;
+}
+
+.about .get-started .container .text p {
+  color: #fff;
+  line-height: 1.8em;
+}
+
+.about .get-started .container .text .btn-getStarted {
+  background-color: #3B5FEF;
+  border: 2px solid transparent;
+  color: #fff;
+  margin-top: 35px;
+}
+
+.events .all-events {
+  margin: 100px 0;
+}
+
+.events .all-events .future-events {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.events .all-events .future-events .event {
+  border: 3px solid #333333;
+  border-radius: 20px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  align-items: stretch;
+}
+
+.events .all-events .future-events .event img {
+  height: 100%;
+  object-fit: cover;
+  grid-area: 1 / 1 / 4 / 2;
+  border-radius: 16px;
+}
+
+.events .all-events .future-events .event .when {
+  grid-area: 1 / 2 / 2 / 3;
+  margin-top: 20px;
+}
+
+.events .all-events .future-events .event .when p {
+  display: inline;
+  border: 2px solid #333333;
+  padding: 4px 10px;
+  margin-right: 6px;
+  border-radius: 20px;
+}
+
+.events .all-events .future-events .event .when p i {
+  margin-right: 5px;
+}
+
+.events .all-events .future-events .event h3 {
+  width: 95%;
+  grid-area: 2 / 2 / 3 / 3;
+  font-size: 1.2em;
+  font-family: 'Roboto Slab', serif;
+}
+
+.events .all-events .future-events .event .where {
+  grid-area: 3 / 2 / 4 / 3;
+  margin-bottom: 20px;
+}
+
+.events .all-events .future-events .event .where i {
+  margin-right: 5px;
+}
+
+.events .all-events .btn-events {
+  margin: 50px auto;
+  border: 2px solid #3B5FEF;
+  color: #3B5FEF;
+}
+
+.testimonials {
+  border: 3px solid #333333;
+  border-radius: 20px;
+  padding: 5px;
+  height: 70vh;
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: 43% 1fr;
+  grid-template-rows: 10% 1fr 10%;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  align-items: center;
+}
+
+.testimonials img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+.testimonials .text {
+  width: 90%;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.testimonials .text p {
+  color: rgba(51, 51, 51, 0.5);
+  line-height: 1.8em;
+  margin: 30px 0;
+}
+
+.testimonials .text p b {
+  font-size: 1.2em;
+  margin-right: 8px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 .courses{
     .main-courses{
-        height: 90vh;
+        height: 80vh;
         display:grid;
         grid-template-columns: repeat(2,1fr);
         .text{
@@ -13,8 +13,9 @@
             }
             p{
                 width: 80%;
-                line-height: 2.4em;
-                margin: 0 0 1.2em ;
+                line-height: 2em;
+                margin: 0 0 30px ;
+                color:$grey;
             }
             .btn-courses{
                 background-color:$blue;
